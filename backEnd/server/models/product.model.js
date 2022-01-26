@@ -22,6 +22,6 @@ const ProductManagerSchema = new mongoose.Schema(
 	{ timestamps: true }
 );
 
-const Product = mongoose.model("Product", ProductManagerSchema);
+const Products = mongoose.model("Products", ProductManagerSchema);
 
-module.exports = Product;
+module.exports = Products;
