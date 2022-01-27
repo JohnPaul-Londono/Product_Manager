@@ -3,6 +3,7 @@ import './App.css';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import AddProduct from './components/AddProduct'
+import ProductList from './components/ProductList';
 
 function App() {
 
@@ -12,7 +13,8 @@ function App() {
     <div className="App">
       <h1>Product Manager</h1>
       <BrowserRouter>
-      <AddProduct />
+        <AddProduct />
+        <ProductList />
         <Switch>
         </Switch>
       </BrowserRouter>
