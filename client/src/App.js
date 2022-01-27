@@ -9,20 +9,21 @@ import ShowOne from './views/ShowOne';
 function App() {
 
 
-
   return (
     <div className="App">
       <h1>Product Manager</h1>
       <BrowserRouter>
-        <Route exact path ="/">
+        <Route exact path="/">
           <AddProduct />
-          <ProductList />
+          
         </Route>
-        <Switch>
-          <Route exact path="/api/products/one/:_id">
-            <ShowOne />
-          </Route>
-        </Switch>
+        <Route exact path="/api/products/new">
+        <ProductList />
+        </Route>
+        
+        <Route exact path="/api/products/one/:_id">
+          <ShowOne />
+        </Route>
       </BrowserRouter>
     </div>
   );

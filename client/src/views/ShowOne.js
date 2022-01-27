@@ -22,8 +22,8 @@ const ShowOne = (props) => {
     return (
         <div>
             <p>Title: {showone.title}</p>
-            <p>Title: {showone.price}</p>
-            <p>Title: {showone.description}</p>
+            <p>Price: {showone.price}</p>
+            <p>Description: {showone.description}</p>
         </div>
     )
 }
