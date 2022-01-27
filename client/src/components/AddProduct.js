@@ -24,6 +24,7 @@ const AddProduct = (props) => {
             title, price, description})
             .then(res =>{
                 console.log(res);
+                window.location.reload(false);
             })
             .catch(err=>console.log(err))
     }
