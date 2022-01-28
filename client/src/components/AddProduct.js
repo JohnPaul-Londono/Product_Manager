@@ -3,7 +3,6 @@ import { useHistory } from 'react-router-dom';
 import axios from 'axios';
 
 const AddProduct = (props) => {
-    const history = useHistory();
     const [title, setTitle] = useState('');
     const [price, setPrice] = useState('');
     const [description, setDescription] = useState('');
@@ -18,7 +17,7 @@ const AddProduct = (props) => {
     const onSubmitHandler = (event) => {
         event.preventDefault();
         console.log("Submitted");
-        history.push("/api/products/new")
+        // history.push("/")
         
         axios.post("http://localhost:8000/api/products/new",{
             title, price, description})
